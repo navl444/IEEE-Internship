@@ -2,7 +2,7 @@
 ## Team Info
 * **Group Number:** Group 1
 * **Team Members:**
-  * Abhirami Rameshan
+  * Abhirami Ramesan
   * Dhilna V K
   * Navalrag V P
   * Tony George
