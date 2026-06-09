@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Collector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header-row">
+            <h1>Submit Your Feedback</h1>
+            
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" onclick="toggleTheme()" />
+                    <div class="slider">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <input type="text" id="name" placeholder="Enter your name">
+        <textarea id="message" rows="4" placeholder="Enter your feedback message"></textarea>
+
+        <button onclick="addFeedback()">Submit Feedback</button>
+
+        <h2>Recent Feedbacks <span id="counter-badge">(0)</span></h2>
+        <input type="text" id="search-bar" placeholder="Search feedbacks..." style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;" />
+        <div id="feedbackList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
